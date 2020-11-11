@@ -37,7 +37,7 @@ class CompradoresController extends Controller
                 return ['error' => 1, 'info'   => $messages];
             }
 
-            // SI TRAE idTienda MODIFICA SINO CREA NUEVO
+            // SI TRAE idComprador MODIFICA SINO CREA NUEVO
             if( !$values['idComprador'] ){
                 $comprador = new CompradoresModel();
             } else {
